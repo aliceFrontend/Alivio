@@ -8,34 +8,37 @@
   --fontLato: normal 20px 'Lato';
 }
 .header{
-	padding: 15px 60px 15px 60px;
+	padding: 30px 60px 31px 60px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	border-bottom: 1px solid #D6D6D6;
 }
-.header__logo a{
+.header__logo{
 	color: var(--green);
 	font: 900 27px 'Avenir';
 }
 .header__nav-item{
-	padding-right: 72px;
+	margin: 0 72px 0 0;
 	transition: 0.2s;
+}
+.header__nav-item:last-child{
+	margin: 0 0 0 0;
 }
 .header__nav-item:hover{
 	color: #737070;
 }
-.header__nav-item, .header__nav-link{
+.header__nav-item, .auth__sign-btn, .auth__trial-btn{
 	text-decoration: none;
 	color: #292929;
 	line-height: 24px;
 	font: var(--fontLato);
 }
-.header__nav-link{
+.auth__sign-btn, .auth__trial-btn{
 	font-weight: 400;
-	padding-right: 35px;
+	margin: 0 35px 0 0;
 }
-.header__nav-link:last-child{
+.auth__trial-btn{
 	padding: 13px 50px;
 	background-color: var(--green);
 	border: 1px solid var(--green);
@@ -45,37 +48,41 @@
 	font: var(--fontLato);
 	text-align: center;
 	transition: 0.2s;
+	margin: 0 0 0 0;
 }
-.header__nav-link:last-child:hover{
+.auth__trial-btn:hover{
 	background-color: #01825d;
 	color: #fff;
 	transition: 0.2s;
 }
-.header__nav-link:hover{
+.auth__sign-btn:hover{
 	color: #737070;
 }
-.main{
+
+.preview{
 	background: url('../img//main/bg.png') no-repeat center;
 	background-size: cover;
 }
-.main__content{
+.preview__content{
 	max-width: 36%;
 	padding: 175px 60px 200px 60px;
 }
-.main__title p{
+.preview__title{
+	margin: 0 0 30px 0;
+}
+.preview__title p{
 	font: bold 65px 'Georgia';
 	color: var(--green);
 	line-height: 73px;
-	padding-bottom: 30px;
 }
-.main__subtitle{
-	padding-bottom: 60px;
+.preview__subtitle{
+	margin: 0 0 60px 0;
 }
-.main__subtitle p{
+.preview__subtitle p{
 	font: var(--fontLato);
 	line-height: 31px;
 }
-.main__link{
+.preview__link{
 	padding: 20px;
 	background-color: var(--green);
 	border: 1px solid var(--green);
@@ -86,7 +93,7 @@
 	text-align: center;
 	transition: 0.2s;
 }
-.main__link:hover{
+.preview__link:hover{
 	background-color: #01825d;
 }
 .about{
@@ -95,7 +102,7 @@
 .about__top{
 	display: flex;
 	justify-content: space-between;
-	padding-bottom: 185px;
+	padding: 0 0 185px 0;
 }
 .about__text{
 	font: 600 24px 'Lato';
@@ -106,7 +113,7 @@
 	color: var(--green);
 }
 .about__subtitle{
-	padding-top: 43px
+	padding: 43px 0 0 0;
 }
 .about__subtitle p{
 	font: var(--fontLato);
@@ -115,17 +122,16 @@
 .about__row{
 	display: flex;
 	justify-content: space-between;
-
 }
 .about__column:nth-child(1){
 	align-self: flex-start;
 }
 .about__column:nth-child(2){
 	align-self: flex-end;
-	padding-top: 130px;
+	padding: 130px 0 0 0;
 }
 .about__column:nth-child(3){
-	padding-top: 39px;
+	padding: 39px 0 0 0;
 	align-self: flex-start;
 }
 .about__column{
@@ -159,7 +165,7 @@
 	left: 30px;
 }
 .item-about__title{
-	padding-bottom: 55px;
+	margin: 0 0 55px 0;
 }
 .item-about__title p{
 	font: 700 30px 'Georgia';
@@ -167,7 +173,7 @@
 	text-align: center;
 }
 .item-about__subtitle{
-	padding-bottom: 60px;
+	margin: 0 0 60px 0;
 }
 .item-about__subtitle p{
 	font: var(--fontLato);
@@ -178,13 +184,13 @@
 	background-color: #245852;
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 .video__content{
-	padding-right: 60px;
+	margin: 0 60px 0 0;
 }
 .video__title{
-	padding-bottom: 33px;
+	margin: 0 0 33px 0;
 }
 .video__title p{
 	font: 700 50px 'Georgia';
@@ -192,7 +198,7 @@
 	color: #fff; 		
 }
 .video__subtitle{
-	padding-bottom: 57px;
+	margin: 0 0 57px 0;
 }
 .video__subtitle p{
 	font: var(--fontLato);
@@ -222,14 +228,13 @@
 	padding: 120px 60px 240px 60px;
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 .product__image{
 	background-color: rgba(1, 153, 109, 0.2);
 	border-radius: 19px;
-	margin-right: 75px;
-	padding-left: 55px;
-	padding-right: 55px;
+	margin: 0 75px 0 0;
+	padding: 0 55px 0 55px;
 }
 .product__content{
 	align-self: flex-start;
@@ -241,7 +246,7 @@
 	max-width: 80%;
 }
 .product__text{
-	padding-bottom: 10px;
+	margin: 0 0 10px 0;
 }
 .product__text p{
 	font: 600 25px 'Lato';
@@ -249,7 +254,7 @@
 	color: #424242;
 }
 .product__title{
-	padding-bottom: 20px;
+	margin: 0 0 20px 0;
 }
 .product__title p{
 	font: 700 50px 'Georgia';
@@ -257,7 +262,7 @@
 	line-height: 79px;
 }
 .product__subtitle{
-	padding-bottom: 40px;
+	margin: 0 0 40px 0;
 }
 .product__subtitle p{
 	font: var(--fontLato);
@@ -276,22 +281,21 @@
 	background-color: #01825d;
 }
 
-
 .product__info{
 	position: absolute;
 	background: #FFFFFF;
 	border-radius: 4px;
-	/*text-align: center;*/
+	text-align: center;
 	bottom: -84px;
 	left: -45px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 	padding: 22px 45px 15px 45px;
 }
 .info-product__text{
-	padding-bottom: 7px;
+	padding: 0 0 7px 0;
 	border-bottom: 0.745px solid #000000;
-	text-align: center;
-	margin-bottom: 15px;
+	/*text-align: center;*/
+	margin: 0 0 15px 0;
 }
 .info-product__text p{
 	font: 600 15px 'Lato';
@@ -302,11 +306,10 @@
   width: 55px;
   padding: 15px;
   height: 55px;
-  background: url('../img/product/women.png') no-repeat center;
-  background-color: rgba(1, 153, 109, 0.2);
+  background: rgba(1, 153, 109, 0.2) url('../img/product/women.png') no-repeat center;
+/*  background-color: rgba(1, 153, 109, 0.2);*/
   background-size: 100%;
-  margin: 0 auto;
-  margin-bottom: 10px;
+  margin: 0 auto 10px auto;
 
 }
 .info-product__img img{
@@ -314,8 +317,8 @@
 }
 
 .info-product__name {
-	padding-bottom: 10px;
-	text-align: center;
+	margin: 0 0 10px 0;
+	/*text-align: center;*/
 }
 .info-product__name p{
 	font: 400 12px 'Lato';
@@ -323,16 +326,18 @@
 }
 
 .info-product__title{
-	padding-bottom: 15px;
+	margin: 0 0 15px 0;
 }
 .info-product__title p{
 	font: 700 15px 'Georgia';
 }
-
+.info-product__list{
+	text-align: left;
+}
 
 .info-product__list li{
 	font: 400 11px 'Lato';
-	padding-bottom: 15px;
+	padding: 0 0 15px 0;
 }
 
 .footer{
@@ -342,9 +347,9 @@
 	flex-direction: column;
 }
 .footer__logo{
-	padding-bottom: 60px;
+	padding: 0 0 60px 0;
 }
-.footer__logo a{
+.footer__logo{
 	font: 900 40px 'Avenir';
 	line-height: 55px;
 	color: #fff;
@@ -352,13 +357,17 @@
 .footer__navs{
 	display: flex;
 	flex-direction: column;
+	max-width: 20%;
 }
 .footer__link {
 	font: 400 25px 'Lato';
 	line-height: 30px;
 	color: #fff;
-	padding-bottom: 60px;
+	padding: 0 0 60px 0;
 	transition: 0.2s;
+}
+.footer__link:last-child{
+	padding: 0 0 0 0;
 }
 .footer__link:hover{
 	color: #737070;
