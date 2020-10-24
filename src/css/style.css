@@ -8,7 +8,7 @@
   --fontLato: normal 20px 'Lato';
 }
 .header{
-	padding: 30px 60px 31px 60px;
+	padding: 30px 275px 31px 275px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -64,8 +64,8 @@
 	background-size: cover;
 }
 .preview__content{
-	max-width: 36%;
-	padding: 175px 60px 200px 60px;
+	max-width: 41%;
+	padding: 175px 60px 330px 275px;
 }
 .preview__title{
 	margin: 0 0 30px 0;
@@ -97,7 +97,7 @@
 	background-color: #01825d;
 }
 .about{
-	padding: 110px 60px 51px 60px;
+	padding: 180px 275px 51px 275px;
 }
 .about__top{
 	display: flex;
@@ -124,11 +124,12 @@
 	justify-content: space-between;
 }
 .about__column:nth-child(1){
-	align-self: flex-start;
+	/*align-self: flex-start;*/
+	padding: 0 95px 0 0;
 }
 .about__column:nth-child(2){
-	align-self: flex-end;
-	padding: 130px 0 0 0;
+	/*align-self: flex-end;*/
+	padding: 130px 95px 0 0;
 }
 .about__column:nth-child(3){
 	padding: 39px 0 0 0;
@@ -180,7 +181,7 @@
 	line-height: 30px;
 }
 .video{
-	padding: 230px 60px 176px 60px;
+	padding: 230px 198px 176px 198px;
 	background-color: #245852;
 	display: flex;
 	align-items: center;
@@ -190,7 +191,7 @@
 	margin: 0 60px 0 0;
 }
 .video__title{
-	margin: 0 0 33px 0;
+	margin: 0 0 61px 0;
 }
 .video__title p{
 	font: 700 50px 'Georgia';
@@ -220,20 +221,20 @@
 	background-color: #01825d;
 }
 .video__play iframe{
-	 max-width: 800px; 
-	 max-height: 421px;
+	 width: 896px; 
+	 height: 516px;
 	 border-radius: 17px;
 }
 .product{
-	padding: 120px 60px 240px 60px;
+	padding: 120px 275px 240px 335px;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	/*justify-content: space-between;*/
 }
 .product__image{
 	background-color: rgba(1, 153, 109, 0.2);
 	border-radius: 19px;
-	margin: 0 75px 0 0;
+	margin: 0 86px 0 0;
 	padding: 0 55px 0 55px;
 }
 .product__content{
@@ -287,14 +288,13 @@
 	border-radius: 4px;
 	text-align: center;
 	bottom: -84px;
-	left: -45px;
+	left: -60px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 	padding: 22px 45px 15px 45px;
 }
 .info-product__text{
 	padding: 0 0 7px 0;
 	border-bottom: 0.745px solid #000000;
-	/*text-align: center;*/
 	margin: 0 0 15px 0;
 }
 .info-product__text p{
@@ -307,7 +307,6 @@
   padding: 15px;
   height: 55px;
   background: rgba(1, 153, 109, 0.2) url('../img/product/women.png') no-repeat center;
-/*  background-color: rgba(1, 153, 109, 0.2);*/
   background-size: 100%;
   margin: 0 auto 10px auto;
 
@@ -318,7 +317,6 @@
 
 .info-product__name {
 	margin: 0 0 10px 0;
-	/*text-align: center;*/
 }
 .info-product__name p{
 	font: 400 12px 'Lato';
@@ -341,7 +339,7 @@
 }
 
 .footer{
-	padding: 95px 90px 145px 90px;
+	padding: 95px 275px 145px 275px;
 	background-color: #245852;
 	display: flex;
 	flex-direction: column;
