@@ -69,6 +69,7 @@
 }
 .preview__title{
 	margin: 0 0 30px 0;
+	max-width: 440px;
 }
 .preview__title p{
 	font: bold 65px 'Georgia';
@@ -77,6 +78,7 @@
 }
 .preview__subtitle{
 	margin: 0 0 60px 0;
+	max-width: 420px;
 }
 .preview__subtitle p{
 	font: var(--fontLato);
@@ -97,12 +99,13 @@
 	background-color: #01825d;
 }
 .about{
-	padding: 180px 275px 51px 275px;
+	padding: 180px 275px 326px 275px;
 }
 .about__top{
 	display: flex;
 	justify-content: space-between;
-	padding: 0 0 185px 0;
+	/*padding: 0 0 185px 0;*/
+	margin: 0 0 185px 0;
 }
 .about__text{
 	font: 600 24px 'Lato';
@@ -113,6 +116,7 @@
 	color: var(--green);
 }
 .about__subtitle{
+	max-width: 635px;
 	padding: 43px 0 0 0;
 }
 .about__subtitle p{
@@ -124,16 +128,15 @@
 	justify-content: space-between;
 }
 .about__column:nth-child(1){
-	/*align-self: flex-start;*/
-	padding: 0 95px 0 0;
+	padding: 0 0 0 0;
+	margin: 0 86px 0 0;
 }
 .about__column:nth-child(2){
-	/*align-self: flex-end;*/
-	padding: 130px 95px 0 0;
+	padding: 265px 0 0 0;
+	margin: 0 86px 0 0;
 }
 .about__column:nth-child(3){
 	padding: 39px 0 0 0;
-	align-self: flex-start;
 }
 .about__column{
 	position: relative;
@@ -153,7 +156,7 @@
 	font: 400 150px 'Georgia';
 	color: rgba(1,153,109, 0.2);
 	position: absolute;
-	top: 20px;
+	top: 152px;
 	left: -42px;
 }
 .item-about--last > .item-about__title:before{
@@ -167,18 +170,29 @@
 }
 .item-about__title{
 	margin: 0 0 55px 0;
-}
-.item-about__title p{
 	font: 700 30px 'Georgia';
 	line-height: 45px;
 	text-align: center;
 }
 .item-about__subtitle{
 	margin: 0 0 60px 0;
+	max-width: 382px;
 }
 .item-about__subtitle p{
 	font: var(--fontLato);
 	line-height: 30px;
+}
+.item-about__image{
+	position: relative;
+	padding-top: 56%;
+}
+.item-about__image img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	border-radius: 16px;
 }
 .video{
 	padding: 230px 198px 176px 198px;
@@ -221,30 +235,30 @@
 	background-color: #01825d;
 }
 .video__play iframe{
-	 width: 896px; 
-	 height: 516px;
-	 border-radius: 17px;
+	height: 516px;
+	width: 896px; 
+	border-radius: 17px;
 }
 .product{
 	padding: 120px 275px 240px 335px;
 	display: flex;
 	align-items: center;
-	/*justify-content: space-between;*/
 }
 .product__image{
 	background-color: rgba(1, 153, 109, 0.2);
 	border-radius: 19px;
 	margin: 0 86px 0 0;
 	padding: 0 55px 0 55px;
+	position: relative;
 }
 .product__content{
 	align-self: flex-start;
 }
-.product__image{
-	position: relative;
-}
-.product__image img{
-	max-width: 80%;
+.product__photo img{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
 }
 .product__text{
 	margin: 0 0 10px 0;
@@ -256,6 +270,7 @@
 }
 .product__title{
 	margin: 0 0 20px 0;
+	max-width: 585px;
 }
 .product__title p{
 	font: 700 50px 'Georgia';
@@ -264,6 +279,7 @@
 }
 .product__subtitle{
 	margin: 0 0 40px 0;
+	max-width: 430px;
 }
 .product__subtitle p{
 	font: var(--fontLato);
@@ -281,7 +297,6 @@
 .product__btn:hover{
 	background-color: #01825d;
 }
-
 .product__info{
 	position: absolute;
 	background: #FFFFFF;
@@ -309,12 +324,10 @@
   background: rgba(1, 153, 109, 0.2) url('../img/product/women.png') no-repeat center;
   background-size: 100%;
   margin: 0 auto 10px auto;
-
 }
 .info-product__img img{
 	max-width: 30%;
 }
-
 .info-product__name {
 	margin: 0 0 10px 0;
 }
@@ -322,7 +335,6 @@
 	font: 400 12px 'Lato';
 	line-height: 19px;
 }
-
 .info-product__title{
 	margin: 0 0 15px 0;
 }
@@ -337,9 +349,8 @@
 	font: 400 11px 'Lato';
 	padding: 0 0 15px 0;
 }
-
 .footer{
-	padding: 95px 275px 145px 275px;
+	padding: 95px 200px 145px 200px;
 	background-color: #245852;
 	display: flex;
 	flex-direction: column;
@@ -370,3 +381,8 @@
 .footer__link:hover{
 	color: #737070;
 }
+
+
+
+/*
+386*/
