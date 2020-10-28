@@ -76,11 +76,11 @@
 	color: var(--green);
 	line-height: 73px;
 }
-.preview__subtitle{
+.preview__description{
 	margin: 0 0 60px 0;
 	max-width: 420px;
 }
-.preview__subtitle p{
+.preview__description p{
 	font: var(--fontLato);
 	line-height: 31px;
 }
@@ -115,11 +115,11 @@
 	line-height: 79px;
 	color: var(--green);
 }
-.about__subtitle{
+.about__description{
 	max-width: 635px;
 	padding: 43px 0 0 0;
 }
-.about__subtitle p{
+.about__description p{
 	font: var(--fontLato);
 	line-height: 30px;
 }
@@ -206,11 +206,9 @@
 }
 .video__title{
 	margin: 0 0 61px 0;
-}
-.video__title p{
 	font: 700 50px 'Georgia';
 	line-height: 78px;
-	color: #fff; 		
+	color: #fff; 
 }
 .video__subtitle{
 	margin: 0 0 57px 0;
@@ -271,8 +269,6 @@
 .product__title{
 	margin: 0 0 20px 0;
 	max-width: 585px;
-}
-.product__title p{
 	font: 700 50px 'Georgia';
 	color: var(--green);
 	line-height: 79px;
@@ -350,7 +346,7 @@
 	padding: 0 0 15px 0;
 }
 .footer{
-	padding: 95px 200px 145px 200px;
+	padding: 95px 275px 145px 275px;
 	background-color: #245852;
 	display: flex;
 	flex-direction: column;
@@ -381,8 +377,3 @@
 .footer__link:hover{
 	color: #737070;
 }
-
-
-
-/*
-386*/
