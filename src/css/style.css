@@ -3,6 +3,9 @@
 	max-width: 1920px;
 	margin: 0 auto;
 }
+.hidden{
+	overflow: hidden;
+}
 :root {
   --green: #01996D;
   --fontLato: normal 20px 'Lato';
@@ -395,7 +398,7 @@
   height: 50px;
   background-color:	#fff;
   border-radius: 50%;
-  box-shadow: 1px 1px 10px rgba(0,0,0,0.4);
+  box-shadow: 1px 1px 10px rgba(154, 147, 140, 0.2);
   position: absolute;
   top:20px;
   left: 20px;
@@ -438,3 +441,50 @@
 }
 
 
+
+/*.modal{
+	max-width: 900px;
+	padding: 200px 275px 200px 275px; 
+	text-align: center;
+	background-color: #fff;
+	position: absolute;
+	border-radius: 16px;
+	top: 25%;
+	left: 25%;
+}
+.modal__content{
+	margin: 0 auto;
+}
+
+.modal__title{
+	margin: 0 0 20px 0;
+}
+.modal__title p{
+	font: bold 65px 'Georgia';
+    color: var(--green);
+    line-height: 73px
+}
+
+.modal__form{
+	text-align: start;
+}
+.modal__login{
+	margin: 0 0 30px 0;
+}
+.modal__login > label, .modal__password > label {
+	font: normal 20px 'Lato';
+}
+.modal__password{
+	margin: 0 0 30px 0;
+}
+.modal__btn{
+	padding: 20px 60px;
+    background-color: var(--green);
+    border: 1px solid var(--green);
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #fff;
+    font: normal 20px 'Lato';
+    text-align: center;
+    transition: 0.2s;
+}*/
