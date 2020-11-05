@@ -308,11 +308,9 @@
 .modal__account a, .modal__reset a {
   font: normal 15px 'Helvetica Neue Cyr Light';   
   } 
-.modal__login input::placeholder, .modal__password input::placeholder{
-  font: normal 18px 'Helvetica Neue Cyr Light';
-  }
 .modal__login input, .modal__password input {
     padding: 10px 18px;
+    font: normal 18px 'Helvetica Neue Cyr Light';
   }
 .modal__btn{
   font: normal 15px 'Helvetica Neue Cyr Medium';
@@ -465,8 +463,6 @@
     line-height: 25px;
   }
 .modal{
-  /*max-width: 580px;
-  padding: 40px 50.6px 53px 48px;*/
   max-width: 380px;
   max-height: 255px;
   padding: 20px 30px 33px 28px;
@@ -491,11 +487,9 @@
   padding: 10px 18px;
   max-width: 150px;
 }   
-.modal__login input::placeholder, .modal__password input::placeholder{
-  font: normal 15px 'Helvetica Neue Cyr Light';
-  }
 .modal__login input, .modal__password input {
     padding: 10px 18px;
+     font: normal 15px 'Helvetica Neue Cyr Light';
   }
 .modal__btn{
   font: normal 13px 'Helvetica Neue Cyr Medium';

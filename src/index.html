@@ -169,10 +169,16 @@
 				<div class="modal__body">
 					<form class="modal__form">
 						<div class="modal__login">
-							<input type="text" id="login" placeholder="username">
+							<input type="text" id="login" placeholder="username"  minlength="3" maxlength="15" pattern="(?=.*[a-zA-Z0-9]).{3,15}" required>
+							<!-- <div class="modal__promt-login">
+								Please enter 3 to 15 characters
+							</div> -->
 						</div>
 						<div class="modal__password">
-							<input type="password" id="password" placeholder="password">
+							<input type="password" id="password" placeholder="password"  inputmode="numeric" minlength="6" maxlength="18" pattern="(?=.*[a-zA-Z0-9]).{6,18}" required>
+							<!-- <div class="modal__promt-password">
+								Please enter 6 to 18 characters
+							</div> -->
 						</div>
 						<button class="modal__btn">Login</button>
 					</form>

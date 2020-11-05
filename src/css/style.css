@@ -4,13 +4,7 @@
 	margin: 0 auto;
 }
 .hidden{
-	overflow-y: hidden;
-	overflow-x: scroll !important;
-	/*overflow: hidden;
-    position: fixed;
-    width: 100%;
-    height: 100%;*/
-
+	overflow: hidden;
 }
 .none{
 	display: none;
@@ -458,13 +452,14 @@
 	z-index: 15;
 	position: fixed;
 	top: 0;
-	left: 0;
-	display: none;
+	left: -200vw;
+	display: block;
+	transition: all 0.5s;
 }
 .modal{
 	z-index: 1;
 	max-width: 680px;
-	max-height: 330px;
+	max-height: 360px;
 	margin: 0 auto;
 	margin-top: 10%;
 	background-color: #fff;
@@ -478,6 +473,10 @@
 	left: 0;
 	right: 0;
 	margin: auto;
+}
+.modal__active{
+	left:0;
+	transition: 0.5s;
 }
 .modal__title{
 	margin: 0 0 30px 0;
@@ -503,11 +502,11 @@
 	padding: 15px 23px;
 	border-radius: 7.5px;
 	border: 1.5px solid #b5b5b5;
-}
-.modal__login input::placeholder, .modal__password input::placeholder{
 	font-style: normal;
 	font: normal 21px 'Helvetica Neue Cyr Light';
+	transition: all 0.3s;
 }
+
 .modal__btn{
 	padding: 18px 52px;
 	background-color: var(--green);
@@ -521,17 +520,6 @@
 .modal__btn:hover{
 	background-color: #01825d;
 }
-/*.modal__body:after{
-	content: url('../img/icons/close.svg');
-	padding: 13px 15px ;
-	background-color: var(--green);
-	position: absolute;
-	top: 0;
-	right: 0;
-	border-radius: 0 7px 0 7px;
-	width: 6%;
-	transition: all 0.2s;
-}*/
 .modal__close{
 	max-width: 50px;
 	padding: 13px 15px 13px 15px;
@@ -566,5 +554,39 @@
 	font: normal 18px 'Helvetica Neue Cyr Light';
 	margin: 0 0 10px 0;
 }
+input{
+	transition: all 0.3s;
+}
+input[type = "text"]:focus,
+input[type = "password"]:focus{
+	border: 1px solid #575757;
+}
+input[type = "text"]:placeholder-shown:invalid, 
+input[type = "password"]:placeholder-shown:invalid{
+	border: 1.5px solid #b5b5b5;
+	background-image: none;
+}
+input[type = "text"]:valid,
+input[type = "password"]:valid{
+	background: url('../img/icons/check-mark.svg') no-repeat 95%;
+	background-size: 10%;
+	border: 1px solid #01996D;
+}
+input[type = "text"]:invalid,
+input[type = "password"]:invalid{
+	background: url('../img/icons/warning-sign.svg') no-repeat 95%;
+	background-size: 9%;
+	border: 1px solid #ff0033;
+}
+
+.modal__promt-login, .modal__promt-password{
+	color: #828282;
+	font-style: normal;
+	font: normal 18px 'Helvetica Neue Cyr Light';
+	padding-top: 10px;
+	display: none;
+	transition: 0.5s;
+}
+
 
 

@@ -24,6 +24,10 @@ window.onload = function(){
   let modal__wrapper = document.querySelector('.modal__wrapper');
   let cross = document.querySelector('.modal__close');
 
+  let promt__login = document.querySelector('#login');
+  let promt__password = document.querySelector('#password');
+  let modal__btn = document.querySelector('.modal__btn');
+
   function CreateAndDelete(){
 
     menu__link.classList.toggle('menu-link__active');
@@ -33,14 +37,45 @@ window.onload = function(){
 
   menu__link.addEventListener("click", CreateAndDelete);
   header__navs.addEventListener("click", CreateAndDelete);
+  
   auth__sign_btn.addEventListener("click",()=>{
-    modal__wrapper.style.display = "block";
+    modal__wrapper.classList.toggle('modal__active');
     hidden.classList.toggle('hidden');
   });
+
   cross.addEventListener("click",()=>{
-  modal__wrapper.style.display = "none"; 
+  modal__wrapper.classList.toggle('modal__active');
   hidden.classList.toggle('hidden');
   });
  
-  
-}
+
+  // promt__login.addEventListener("click", ()=>{
+  //   let modal__promt_login = document.querySelector('.modal__promt-login');
+    
+  //   if(promt__login.validity.valid == false){
+
+  //     modal__promt_login.classList.toggle('block');
+  //   } else{
+
+  //      modal__promt_login.classList.remove('block');
+  //      modal__promt_login.classList.add('none');
+  //   }
+
+  //   console.dir(promt__login);
+  // });
+
+  // promt__password.addEventListener("click",()=>{
+  //   let modal__promt_password = document.querySelector('.modal__promt-password');
+  //   modal__promt_login.style.display = "none";
+
+  //   if(promt__password.validity.valid == false){
+
+  //     modal.promt__password.classList.toggle('block');
+
+  //   } else{
+
+  //      modal.promt__password.classList.remove('block');
+  //      modal.promt__password.classList.add('none');
+  //   }
+  // });
+ }
