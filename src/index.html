@@ -106,7 +106,7 @@
 		  			<a href="#" class="video__btn">Let’s get started</a>
 		  		</div>
 		  		<div class="video__play">
-		  			<iframe src="https://www.youtube.com/embed/HkdAHXoRtos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		  			<!-- <iframe src="https://www.youtube.com/embed/HkdAHXoRtos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 		  		</div>	
 		  </div>
 		  <div class="product">
@@ -158,26 +158,37 @@
 		  	</div>
 		  </footer>
 	</div>
-	<!-- <div class="modal">
-		<div class="modal__content">
-			<div class="modal__title">
-				<p>Sign in</p> 
-			</div>
-			<div class="modal__body">
-				<form action="post" class="modal__form">
-					<div class="modal__login">
-						<label for="login">Login</label>
-						<input type="text" id="login">
+	<div class="modal__wrapper">
+		<div class="modal">
+				<div class="modal__close">
+					<img src="img/icons/close.svg" alt="">
+				</div>
+				<div class="modal__title">
+					<p>Sign in</p>
+				</div>
+				<div class="modal__body">
+					<form class="modal__form">
+						<div class="modal__login">
+							<input type="text" id="login" placeholder="username">
+						</div>
+						<div class="modal__password">
+							<input type="password" id="password" placeholder="password">
+						</div>
+						<button class="modal__btn">Login</button>
+					</form>
+					<div class="modal__help">
+						<div class="modal__account">
+							<p>Don't have an account?</p>
+							<a href="#">Sign up</a>
+						</div>
+						<div class="modal__reset">
+							<p>Forgot your password?</p>
+							<a href="#">Reset password</a>
+						</div>
 					</div>
-					<div class="modal__password">
-						<label for="password">Passwod</label>
-						<input type="password" id="password">
-					</div>
-					<button class="modal__btn">Ok</button>
-				</form>
-			</div>
-		</div>
-	</div> -->
+				</div>
+		</div>	
+	</div>
 	<script src="js/main.js"></script>
 </body>
 </html>

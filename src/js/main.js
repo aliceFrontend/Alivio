@@ -20,6 +20,10 @@ window.onload = function(){
   let header__navs = document.querySelector('.header__navs');
   let hidden = document.querySelector('body');
 
+  let auth__sign_btn = document.querySelector('.auth__sign-btn');
+  let modal__wrapper = document.querySelector('.modal__wrapper');
+  let cross = document.querySelector('.modal__close');
+
   function CreateAndDelete(){
 
     menu__link.classList.toggle('menu-link__active');
@@ -29,19 +33,14 @@ window.onload = function(){
 
   menu__link.addEventListener("click", CreateAndDelete);
   header__navs.addEventListener("click", CreateAndDelete);
+  auth__sign_btn.addEventListener("click",()=>{
+    modal__wrapper.style.display = "block";
+    hidden.classList.toggle('hidden');
+  });
+  cross.addEventListener("click",()=>{
+  modal__wrapper.style.display = "none"; 
+  hidden.classList.toggle('hidden');
+  });
+ 
   
 }
-
-
-
-
-
-
-  // menu__link.onclick = function(){
-
-  //   CreateAndDelete();
-  // }
-  // header__navs.onclick = function(){
-
-  //   CreateAndDelete();
-  // }

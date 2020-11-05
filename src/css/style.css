@@ -4,7 +4,19 @@
 	margin: 0 auto;
 }
 .hidden{
-	overflow: hidden;
+	overflow-y: hidden;
+	overflow-x: scroll !important;
+	/*overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;*/
+
+}
+.none{
+	display: none;
+}
+.block{
+	display: block;
 }
 :root {
   --green: #01996D;
@@ -439,52 +451,120 @@
 	transform: rotate(-135deg);
 	margin-top: 0;
 }
-
-
-
-/*.modal{
-	max-width: 900px;
-	padding: 200px 275px 200px 275px; 
-	text-align: center;
-	background-color: #fff;
-	position: absolute;
-	border-radius: 16px;
-	top: 25%;
-	left: 25%;
+.modal__wrapper{
+	background-color: rgba(0,0,0,0.4);
+	width: 100%;
+	height: 100%;
+	z-index: 15;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
 }
-.modal__content{
+.modal{
+	z-index: 1;
+	max-width: 680px;
+	max-height: 330px;
 	margin: 0 auto;
+	margin-top: 10%;
+	background-color: #fff;
+	border-radius: 7px;
+	border: 1px solid #dcdcdc;
+	transition: all 0.5s;
+	padding: 40px 50.6px 53px 88px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
-
 .modal__title{
-	margin: 0 0 20px 0;
+	margin: 0 0 30px 0;
 }
 .modal__title p{
-	font: bold 65px 'Georgia';
-    color: var(--green);
-    line-height: 73px
+	text-align: center;
+	font: normal 30px 'Helvetica Neue Cyr Light';
 }
-
+.modal__body{
+	display: flex;
+}
 .modal__form{
-	text-align: start;
+	margin: 0 39px 0 0;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.modal__login{
-	margin: 0 0 30px 0;
+.modal__login, .modal__password{
+	margin: 0 0 23px 0;
+	
 }
-.modal__login > label, .modal__password > label {
-	font: normal 20px 'Lato';
+.modal__login input, .modal__password input{
+	padding: 15px 23px;
+	border-radius: 7.5px;
+	border: 1.5px solid #b5b5b5;
 }
-.modal__password{
-	margin: 0 0 30px 0;
+.modal__login input::placeholder, .modal__password input::placeholder{
+	font-style: normal;
+	font: normal 21px 'Helvetica Neue Cyr Light';
 }
 .modal__btn{
-	padding: 20px 60px;
-    background-color: var(--green);
-    border: 1px solid var(--green);
-    border-radius: 4px;
-    box-sizing: border-box;
-    color: #fff;
-    font: normal 20px 'Lato';
-    text-align: center;
-    transition: 0.2s;
+	padding: 18px 52px;
+	background-color: var(--green);
+	border-radius: 5px;
+	color: #fff;
+	font-style: normal;
+	font: normal 18px 'Helvetica Neue Cyr Medium';
+	text-transform: uppercase;
+	transition: all 0.2s;
+}
+.modal__btn:hover{
+	background-color: #01825d;
+}
+/*.modal__body:after{
+	content: url('../img/icons/close.svg');
+	padding: 13px 15px ;
+	background-color: var(--green);
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-radius: 0 7px 0 7px;
+	width: 6%;
+	transition: all 0.2s;
 }*/
+.modal__close{
+	max-width: 50px;
+	padding: 13px 15px 13px 15px;
+	background-color: var(--green);
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-radius: 0 7px 0 7px;
+	transition: all 0.2s;
+	display: flex;
+    justify-content: center;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.modal__close:hover{
+	background-color: #01825d;
+}
+.modal__close img{
+	width: 73%;
+}
+.modal__account{
+	margin: 0 0 27px 0;
+}
+.modal__account a, .modal__reset a{
+	color: #607bf3;
+	font-style: normal;
+	font: normal 18px 'Helvetica Neue Cyr Light';
+}
+.modal__account p, .modal__reset p{
+	color: #828282;
+	font-style: normal;
+	font: normal 18px 'Helvetica Neue Cyr Light';
+	margin: 0 0 10px 0;
+}
+
+

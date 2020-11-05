@@ -49,7 +49,23 @@
     font-style: normal;
 }
 
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'Helvetica Neue Cyr Light';
+  src: url('../fonts/helveticaNeue/HelveticaNeueCyr-Light.eot');
+  src: url('../fonts/helveticaNeue/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/helveticaNeue/HelveticaNeueCyr-Light.woff') format('woff'),
+       url('../fonts/helveticaNeue/HelveticaNeueCyr-Light.ttf') format('truetype');
+}
 
 
-
-
+@font-face {
+font-family: 'Helvetica Neue Cyr Medium';
+src: url('../fonts/helveticaNeue/HelveticaNeueCyr-Medium.eot');
+src: url('../fonts/helveticaNeue/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+url('../fonts/helveticaNeue/HelveticaNeueCyr-Medium.woff') format('woff'),
+url('../fonts/helveticaNeue/HelveticaNeueCyr-Medium.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}

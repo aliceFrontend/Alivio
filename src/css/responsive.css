@@ -1,3 +1,4 @@
+@media(max-width: 2560px){
 @media(max-width: 1700px){
  br {
   display: none;
@@ -25,7 +26,7 @@
   }
 .footer__navs{
   max-width: 50%;
-  }              
+  }            
 }
 @media(max-width: 1520px){
 .video{
@@ -154,7 +155,7 @@
  }
 .footer{
   padding: 95px 50px 145px 50px; 
-  }   
+  }  
 }
 @media(max-width: 1000px){
 .header__navs{
@@ -293,7 +294,30 @@
 .footer__link {
     font: 400 20px 'Lato';
     line-height: 30px;
-  }  
+  }
+.modal{
+  max-width: 580px;
+  padding: 40px 50.6px 53px 48px;
+}   
+.modal__title p {
+  font: normal 27px 'Helvetica Neue Cyr Light';
+  }
+.modal__account p, .modal__reset p {
+  font: normal 15px 'Helvetica Neue Cyr Light';   
+  }
+.modal__account a, .modal__reset a {
+  font: normal 15px 'Helvetica Neue Cyr Light';   
+  } 
+.modal__login input::placeholder, .modal__password input::placeholder{
+  font: normal 18px 'Helvetica Neue Cyr Light';
+  }
+.modal__login input, .modal__password input {
+    padding: 10px 18px;
+  }
+.modal__btn{
+  font: normal 15px 'Helvetica Neue Cyr Medium';
+  padding: 13px 42px;
+  }            
 }
 @media(max-width: 768px){
 :root {
@@ -439,7 +463,44 @@
 .footer__link {
     font: 400 15px 'Lato';
     line-height: 25px;
-  }                                                   
+  }
+.modal{
+  /*max-width: 580px;
+  padding: 40px 50.6px 53px 48px;*/
+  max-width: 380px;
+  max-height: 255px;
+  padding: 20px 30px 33px 28px;
+}
+.modal__title {
+    margin: 0 0 20px 0;
+}   
+.modal__title p {
+  font: normal 23px 'Helvetica Neue Cyr Light';
+  }
+.modal__form {
+    margin: 0 20px 0 0;
+  }  
+
+.modal__account p, .modal__reset p {
+  font: normal 13px 'Helvetica Neue Cyr Light';   
+  }
+.modal__account a, .modal__reset a {
+  font: normal 13px 'Helvetica Neue Cyr Light';   
+  }
+.modal__login input, .modal__password input{
+  padding: 10px 18px;
+  max-width: 150px;
+}   
+.modal__login input::placeholder, .modal__password input::placeholder{
+  font: normal 15px 'Helvetica Neue Cyr Light';
+  }
+.modal__login input, .modal__password input {
+    padding: 10px 18px;
+  }
+.modal__btn{
+  font: normal 13px 'Helvetica Neue Cyr Medium';
+  padding: 10px 32px;
+  }                                                      
 }
 @media(max-width: 660px){
 .preview__content{
@@ -478,7 +539,15 @@
   } 
 .info-product__list {
     padding-left: 0;
-  }              
+  }
+.modal{
+  max-width: 280px;
+  max-height: 245px;
+  padding: 10px 20px 23px 18px;
+  }
+.modal__login input, .modal__password input{
+  max-width: 122px;
+  }                  
 }
 
 @media(max-width: 375px){
@@ -487,17 +556,3 @@
   }
 }
 
-
-
-
-
-/*@media(max-width: 375px){
-.about, .video, .product, .footer{
-  display: none;
- }
-}
-@media(max-width: 320px){
-.about, .video, .product, .footer{
-  display: none;
- }
-}*/
