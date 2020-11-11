@@ -1,4 +1,4 @@
-@media(max-width: 2560px){
+/*@media(max-width: 2560px){}*/
 @media(max-width: 1700px){
  br {
   display: none;
@@ -139,7 +139,7 @@
   padding: 10px 25px;
   }
 .preview__link{
-  padding: 15px;
+  line-height: 53px;
   }
 .about{
   padding: 50px 50px 51px 50px;
@@ -148,7 +148,8 @@
   padding: 130px 42px 146px 42px;
   }
 .video__btn{
-  padding: 15px 30px;
+ line-height: 57px;
+ max-width: 170px;
   } 
 .product{
   padding: 120px 50px 240px 50px;
@@ -167,7 +168,7 @@
   top:0;
   right: 0;
   left:-100vw;
-  width: 100vw;
+  width: 80vw;
   height: 100vh;
   z-index: 1;
   text-align: center;
@@ -188,7 +189,8 @@
   }
 .header__navs a:hover{
   background-color: #fff;
-  width: 100vw;
+ /* width: 100vw;*/
+  width: 80vw;
   z-index: 9;
   }
 .header__nav-item{
@@ -283,8 +285,9 @@
   font: 700 35px 'Georgia';
   line-height: 45px;
 }
-.product__btn {
-    padding: 15px 30px;                                     
+.product__btn { 
+    line-height: 52px;   
+    max-width: 178px;                                
   }
 .footer__logo {
     font: 900 30px 'Avenir';
@@ -335,6 +338,8 @@
   }
 .preview__link{
   font: normal 15px 'Lato';
+  line-height: 45px;
+  max-width: 150px;
   }
 .about__top{
   flex-wrap: wrap;
@@ -447,9 +452,6 @@
   font: 700 30px 'Georgia';
   line-height: 40px;
 }
-.product__btn {
-    padding: 15px 25px;                                     
-  }
 .footer{
   padding: 95px 25px 145px 25px; 
   }
@@ -547,6 +549,40 @@
 @media(max-width: 375px){
 .header__auth{
   display: none;
+  } 
+ .auth__sign-btn-mobile, .auth__trial-btn-mobile{
+  display: block;
+  font: normal 15px 'Lato';
+ }
+ .auth__sign-btn-mobile:hover, .auth__trial-btn-mobile:hover{
+  background-color: #fff;
+  width: 100vw;
+  z-index: 9;
+  color: #737070;
+ }
+ .modal{
+  max-height: 370px;
+ }
+.modal__form{
+  margin: 0 0 30px 0;
+} 
+.modal__body{
+  display: block;
+ }
+.modal__help{
+  text-align: center;
+ }
+.modal__login input, .modal__password input {
+    max-width: 300px;
+  }    
+}
+
+@media(max-width: 300px){
+.modal{
+  max-width: 200px;
   }
+.modal__login input, .modal__password input {
+    max-width: 150px;
+  }    
 }
 

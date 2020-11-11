@@ -1,3 +1,4 @@
+
 @import url('fonts.css');
 .layout{
 	max-width: 1920px;
@@ -22,6 +23,9 @@
 	align-items: center;
 	justify-content: space-between;
 	border-bottom: 1px solid #D6D6D6;
+}
+.header__navs{
+	overflow-y: auto;
 }
 .header__logo{
 	color: var(--green);
@@ -94,7 +98,7 @@
 	line-height: 31px;
 }
 .preview__link{
-	padding: 20px;
+	/*padding: 20px;*/
 	background-color: var(--green);
 	border: 1px solid var(--green);
 	border-radius: 4px;
@@ -103,6 +107,9 @@
 	font: normal 20px 'Lato';
 	text-align: center;
 	transition: 0.2s;
+	line-height: 63px;
+    display: block;
+    max-width: 167px;
 }
 .preview__link:hover{
 	background-color: #01825d;
@@ -230,13 +237,18 @@
 	color: #fff;
 }
 .video__btn{
-	padding: 20px 50px;
 	background-color: var(--green);
 	font: var(--fontLato);
 	color: #fff;
 	box-sizing: border-box;
 	border-radius: 4px;
 	transition: 0.2s;
+	line-height: 67px;
+    display: block;
+    max-width: 240px;
+    text-align: center;
+    height: auto;
+}
 
 }
 .video__btn:hover{
@@ -301,13 +313,17 @@
 	line-height: 32px;	
 }
 .product__btn{
-	padding: 20px 50px;
     background-color: var(--green);
     font: var(--fontLato);
     color: #fff;
     box-sizing: border-box;
 	border-radius: 4px;
 	transition: 0.2s;
+	line-height: 62px;
+    display: block;
+    max-width: 228px;
+    height: auto;
+    text-align: center;
 }
 .product__btn:hover{
 	background-color: #01825d;
@@ -363,6 +379,7 @@
 .info-product__list li{
 	font: 400 11px 'Lato';
 	padding: 0 0 15px 0;
+	list-style: disc;
 }
 .footer{
 	padding: 95px 275px 145px 275px;
@@ -454,7 +471,6 @@
 	top: 0;
 	left: -200vw;
 	display: block;
-	transition: all 0.5s;
 }
 .modal{
 	z-index: 1;
@@ -470,13 +486,16 @@
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	left: 0;
+	left: -200vw;
 	right: 0;
 	margin: auto;
 }
 .modal__active{
 	left:0;
-	transition: 0.5s;
+}
+.modal__show{
+	transition: all 0.5s;
+	left: 0;
 }
 .modal__title{
 	margin: 0 0 30px 0;
@@ -499,12 +518,13 @@
 	
 }
 .modal__login input, .modal__password input{
-	padding: 15px 23px;
 	border-radius: 7.5px;
 	border: 1.5px solid #b5b5b5;
 	font-style: normal;
 	font: normal 21px 'Helvetica Neue Cyr Light';
 	transition: all 0.3s;
+	line-height: 46px;
+    padding: 0 0px 0 15px;
 }
 
 .modal__btn{
@@ -588,5 +608,6 @@ input[type = "password"]:invalid{
 	transition: 0.5s;
 }
 
-
-
+.auth__sign-btn-mobile, .auth__trial-btn-mobile{
+	display: none;
+}

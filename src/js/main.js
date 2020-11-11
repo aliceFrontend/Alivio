@@ -21,12 +21,14 @@ window.onload = function(){
   let hidden = document.querySelector('body');
 
   let auth__sign_btn = document.querySelector('.auth__sign-btn');
+  let auth__sign_btn_mobile = document.querySelector('.auth__sign-btn-mobile');
   let modal__wrapper = document.querySelector('.modal__wrapper');
   let cross = document.querySelector('.modal__close');
+  let modal__show = document.querySelector('.modal');
 
-  let promt__login = document.querySelector('#login');
-  let promt__password = document.querySelector('#password');
-  let modal__btn = document.querySelector('.modal__btn');
+  // let promt__login = document.querySelector('#login');
+  // let promt__password = document.querySelector('#password');
+  // let modal__btn = document.querySelector('.modal__btn');
 
   function CreateAndDelete(){
 
@@ -40,42 +42,24 @@ window.onload = function(){
   
   auth__sign_btn.addEventListener("click",()=>{
     modal__wrapper.classList.toggle('modal__active');
+    modal__show.classList.toggle('modal__show');
+    hidden.classList.toggle('hidden');
+    let body = document.querySelector('body');
+     hidden.addEventListener("click", ()=>{
+        console.log("click!");
+      });
+  });
+
+  auth__sign_btn_mobile.addEventListener("click",()=>{
+    modal__wrapper.classList.toggle('modal__active');
+    modal__show.classList.toggle('modal__show');
     hidden.classList.toggle('hidden');
   });
 
   cross.addEventListener("click",()=>{
   modal__wrapper.classList.toggle('modal__active');
+  modal__show.classList.toggle('modal__show');
   hidden.classList.toggle('hidden');
   });
  
-
-  // promt__login.addEventListener("click", ()=>{
-  //   let modal__promt_login = document.querySelector('.modal__promt-login');
-    
-  //   if(promt__login.validity.valid == false){
-
-  //     modal__promt_login.classList.toggle('block');
-  //   } else{
-
-  //      modal__promt_login.classList.remove('block');
-  //      modal__promt_login.classList.add('none');
-  //   }
-
-  //   console.dir(promt__login);
-  // });
-
-  // promt__password.addEventListener("click",()=>{
-  //   let modal__promt_password = document.querySelector('.modal__promt-password');
-  //   modal__promt_login.style.display = "none";
-
-  //   if(promt__password.validity.valid == false){
-
-  //     modal.promt__password.classList.toggle('block');
-
-  //   } else{
-
-  //      modal.promt__password.classList.remove('block');
-  //      modal.promt__password.classList.add('none');
-  //   }
-  // });
  }
