@@ -26,10 +26,6 @@ window.onload = function(){
   let cross = document.querySelector('.modal__close');
   let modal__show = document.querySelector('.modal');
 
-  // let promt__login = document.querySelector('#login');
-  // let promt__password = document.querySelector('#password');
-  // let modal__btn = document.querySelector('.modal__btn');
-
   function CreateAndDelete(){
 
     menu__link.classList.toggle('menu-link__active');
@@ -38,7 +34,7 @@ window.onload = function(){
   }
 
   menu__link.addEventListener("click", CreateAndDelete);
-  header__navs.addEventListener("click", CreateAndDelete);
+  // header__navs.addEventListener("click", CreateAndDelete);
   
   auth__sign_btn.addEventListener("click",()=>{
     modal__wrapper.classList.toggle('modal__active');
@@ -61,5 +57,40 @@ window.onload = function(){
   modal__show.classList.toggle('modal__show');
   hidden.classList.toggle('hidden');
   });
- 
+
+  let lastMove = null;
+  let start = 0;
+  let step = 0; 
+  let result = 0;
+  let header__navs_act = "";
+
+   hidden.addEventListener("touchstart", (event)=>{
+    
+      header__navs_act = document.querySelector('.header__navs-active');
+      lastMove = event;
+      start = lastMove.changedTouches[0].pageX;
+  });
+
+    hidden.addEventListener("touchmove", (event)=>{
+      
+      lastMove = event;
+      step = lastMove.changedTouches[0].pageX;
+      header__navs_act.style.transition = "right 1s ease-out 0.5s";
+      header__navs_act.style.transform = "translateX("+-(start-step)+"px)";
+  });
+
+    hidden.addEventListener("touchend", (event)=>{
+    
+      result = start - step;
+      if(-(result) < -400){
+
+        CreateAndDelete();
+        header__navs_act.style.transform = "none";
+      } else{ 
+        header__navs_act.style.transform = "none";
+      }
+      // console.log("result" + result);
+
+    });
  }
+
