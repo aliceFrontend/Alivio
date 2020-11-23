@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/leaflet.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
@@ -20,7 +21,7 @@
 			 	<a href="#" class="header__nav-item">Why Alivio</a>
 	 			<a href="#" class="header__nav-item">Solutions</a>
 	 			<a href="#" class="header__nav-item">Community</a>
-	 			<a href="#" class="header__nav-item">Pricing</a>
+	 			<a href="#" class="header__nav-item">Contacts</a>
 	 			 <!-- <div class="header__auth-mobile"> -->
 			 		<a href="#" class="auth__sign-btn-mobile">Sign in</a>
 			 		<a href="#" class="auth__trial-btn-mobile">Start Trial</a>
@@ -30,6 +31,32 @@
 		 		<a href="#" class="auth__sign-btn">Sign in</a>
 		 		<a href="#" class="auth__trial-btn">Start Trial</a>
 			 </div>
+			 <div class="contacts__wrapper">
+			 	<div class="contacts__modal">
+			 		<div class="contacts__close">
+			 			<img src="img/icons/close.svg" alt="">
+			 		</div>
+			 		<div class="contacts__title">
+			 			<p>Contacts</p>
+			 		</div>
+				 	<div class="contacts__map">
+				 		<div class="map__wrapper" id="mapid">
+				 			
+				 		</div>
+				 	</div>
+				 	<div class="contacts__info">
+				 		<div class="contacts__address">
+				 				<img src="img/icons/address.svg" alt="">
+				 				<a>ул. Ленина 44а</a>
+				 		</div>
+				 		<div class="contacts__number">
+				 				<img src="img/icons/telephone.svg" alt="">
+				 				<a href="tel:+375333152396">+375(33) 315-23-96</a>
+				 		</div>
+				 	</div>
+				 	
+				</div>
+			 </div>	
 		</header>
 				<div class="preview">
 					<div class="preview__content">
@@ -192,7 +219,8 @@
 					</div>
 				</div>
 		</div>	
-	</div>
+	</div>	
+	<script src="js/leaflet.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
