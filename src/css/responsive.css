@@ -1,4 +1,4 @@
-/*@media(max-width: 2560px){}*/
+
 @media(max-width: 1700px){
  br {
   display: none;
@@ -320,7 +320,28 @@
 .modal__btn{
   font: normal 15px 'Helvetica Neue Cyr Medium';
   padding: 13px 42px;
-  }            
+  }
+#mapid{
+  width: 490px;
+}  
+.contacts__modal{
+  max-width: 597px;
+ }
+.contacts__map{
+  margin: 0 0 80px 0;
+ }
+.contacts__title p{
+  font-size: 25px;
+  }
+.contacts__address a, .contacts__number a{
+  font-size: 16px;
+ }
+.contacts__address img{
+  width: 13%;
+}
+.contacts__number img {
+    width: 12%;
+  }               
 }
 @media(max-width: 768px){
 :root {
@@ -498,7 +519,32 @@
 .modal__btn{
   font: normal 13px 'Helvetica Neue Cyr Medium';
   padding: 10px 32px;
-  }                                                      
+  }
+.contacts__modal {
+    max-width: 397px;
+    max-height: 450px;
+ }
+#mapid {
+    width: 340px;
+}
+.contacts__modal{
+  padding: 30px 20px 20px 30px;
+  }
+.contacts__map {
+    margin: 0 0 120px 0;
+  }
+.contacts__info {
+    display: block;
+  }
+.contacts__address {
+  margin: 0 0 20px 0;
+  }
+.contacts__number img {
+    width: 7%;
+} 
+.contacts__title p {
+    font-size: 20px;
+}                                                                      
 }
 @media(max-width: 660px){
 .preview__content{
@@ -545,7 +591,21 @@
   }
 .modal__login input, .modal__password input{
   max-width: 122px;
-  }                  
+  }
+/* .contacts__map {
+    margin: 0 0 160px 0;
+  }   */   
+#mapid {
+    width: 300px;
+    height: 180px;
+  }
+.contacts__modal {
+    max-width: 340px;
+    max-height: 400px;
+}
+.contacts__modal {
+    padding: 30px 20px 20px 20px;
+ }                   
 }
 
 @media(max-width: 375px){
@@ -576,7 +636,18 @@
  }
 .modal__login input, .modal__password input {
     max-width: 300px;
-  }    
+  }
+#mapid {
+    width: 238px;
+    height: 150px;
+  }
+.contacts__modal {
+    max-width: 280px;
+    max-height: 380px;
+}
+.contacts__map {
+    margin: 0 0 100px 0;
+  }        
 }
 
 @media(max-width: 300px){

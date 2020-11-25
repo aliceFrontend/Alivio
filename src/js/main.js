@@ -21,9 +21,6 @@ const menuLink = document.querySelector('.menu-link'),
     modalShow.classList.toggle('modal__show');
     hidden.classList.toggle('hidden');
     const body = document.querySelector('body');
-     // hidden.addEventListener("click", ()=>{
-     //    console.log("click!");
-     //  });
   }
   function ModalActive(){
 
@@ -75,9 +72,9 @@ const menuLink = document.querySelector('.menu-link'),
    hidden.addEventListener("touchstart", TouctStartMobile);
    hidden.addEventListener("touchmove", TouchMoveMobile);
    hidden.addEventListener("touchend", TouchEndMibile);
- }
 
-var map = L.map('mapid').setView([54.762,37.375], 8); // Карта внутри блока #map
+
+let map = L.map('mapid').setView([55.182373, 30.200888], 8);
 
 L.tileLayer('http://vec{s}.maps.yandex.net/tiles?l=map&v=4.55.2&z={z}&x={x}&y={y}&scale=2&lang=ru_RU', {
     subdomains: ['01', '02', '03', '04'],
@@ -86,3 +83,45 @@ L.tileLayer('http://vec{s}.maps.yandex.net/tiles?l=map&v=4.55.2&z={z}&x={x}&y={y
     updateWhenIdle: false
   }
 ).addTo(map);
+
+
+let greenIcon = L.icon({
+    
+    iconUrl: 'img/marker-icon.svg',
+    iconSize:     [28, 85], 
+    iconAnchor:   [22, 94],
+    popupAnchor:  [-3, -76]
+});
+
+
+let marker = L.marker([55.182373, 30.200888], {icon: greenIcon}).addTo(map);
+marker.bindPopup("<p>ул. Белобородова</p>").addTo(map);
+
+
+  const contacts =  document.querySelector('.contact');
+  const contactsWrapper = document.querySelector('.contacts__wrapper');
+  const contactsClose = document.querySelector('.contacts__close');
+  const contactsModal = document.querySelector('.contacts__modal');
+
+
+  contacts.addEventListener("click", ContactsClick);
+  contactsClose.addEventListener("click", ContactsClose);
+
+  function ContactsClick(){
+
+    contactsWrapper.classList.toggle('contacts__active');
+    contactsModal.classList.toggle('contacts__show');
+    hidden.classList.add('hidden');
+  }
+
+  function ContactsClose(){
+    contactsWrapper.classList.toggle('contacts__active');
+    contactsModal.classList.toggle('contacts__show');
+    hidden.classList.toggle('hidden');
+  }
+
+}
+
+
+
+
